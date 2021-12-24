@@ -1,0 +1,25 @@
+.left-nav
+{
+    height: 100vh;
+    width: 180px;
+    padding: 15px;
+    position: absolute;
+    background-color: #2a3b4c;
+    overflow-x: hidden;
+  
+}
+
+.left-nav a
+{
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    display: block;
+    text-align: left;
+}
+
+.main-admin-home
+{
+    text-align: right;
+}
+

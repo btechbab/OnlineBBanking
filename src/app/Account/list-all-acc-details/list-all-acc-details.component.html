@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-md-3">
+      
+<app-admin-menu></app-admin-menu>
+      
+    </div>
+    <div class="col-md-8">
+        
+
+<h3 class="p-3 text-center">Hey ! These are the Accounts Created!</h3>
+
+<div class="container">
+    <table class="table table-striped table-bordered">
+        <thead>
+       
+        </thead>
+        <tbody>
+              <tr *ngFor="let c of AccList;">              
+                <td> {{c.accNo}} </td>
+                <td> {{c.userId}} </td>
+                <td> {{c.title}} </td> 
+                <td> {{c.firstName}} </td>                      
+                <td> {{c.middleName}} </td>
+                <td> {{c.lastName}} </td>
+                <td> {{c.fatherName}} </td>
+                <td> {{c.mobileNum}} </td>
+                <td> {{c.emailID}} </td>
+                <td> {{c.aadharNum}} </td>
+                <td> {{c.dob}} </td> 
+                <td> {{c.landmark}} </td>                      
+                <td> {{c.city}} </td>
+                <td> {{c.state}} </td>
+                <td> {{c.pincode}} </td>
+                <td> {{c.occType}} </td>
+                <td> {{c.sourceOfIncome}} </td>
+                <td> {{c.grossAnnualIncome}} </td>
+                <td> {{c.debitCard}} </td>
+                <td> {{c.netBanking}} </td> 
+                <td> {{c.balance}} </td>   
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+<div class="col-md-1">
+    <a class="btn btn-warning" href="/AdminhomePage">Back</a>
+</div>
+</div>

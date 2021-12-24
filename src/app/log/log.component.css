@@ -1,0 +1,21 @@
+.person
+{
+    border-radius: 100%;
+    width: 25%;
+    position: relative;
+    left: 20px;
+}
+
+.logbuttons
+{
+    position: absolute;
+    top: 163px;
+    left: 450px;
+}
+
+.userbn
+{
+    margin-left: -1px;
+    margin-top: 50px;
+    width: 106%;
+}

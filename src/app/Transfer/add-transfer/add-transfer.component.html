@@ -1,0 +1,67 @@
+<div class="row">
+  <div class="col-md-3">
+    
+<app-user-menu></app-user-menu>
+    
+  </div>
+  <div class="col-md-8">
+    <h1>Transfer Amount</h1>
+    
+  
+    <div class="col-md-6 col-md-offset-2">
+      
+        <br/>
+        <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="fromAccount">fromAccount</label>
+            <input formControlName="fromAccount" placeholder="fromAccount" name="fromAccount" class="form-control" id="fromAccount">
+            <div *ngIf="submitted && addForm.controls.fromAccount.errors" class="error">
+                <div class="text-danger" *ngIf="addForm.controls.fromAccount.errors.required">fromAccount is required</div>
+              </div>
+          </div>
+  
+          <div class="form-group">
+            <label for="toAccount">toAccount</label>
+            <input formControlName="toAccount" placeholder="toAccount" name="toAccount" class="form-control" id="toAccount">
+            <div *ngIf="submitted && addForm.controls.toAccount.errors" class="error">
+                <div class="text-danger" *ngIf="addForm.controls.toAccount.errors.required">toAccount is required</div>
+              </div>
+          </div>
+  
+          <div class="form-group">
+            <label for="amount">amount</label>
+            <input formControlName="amount" placeholder="amount" name="amount" class="form-control" id="amount">
+            <div *ngIf="submitted && addForm.controls.amount.errors" class="error">
+                <div class="text-danger" *ngIf="addForm.controls.amount.errors.required">amount is required</div>
+            </div>
+          </div>
+  
+          <div class="form-group">
+            <label for="transactionDate">transactionDate</label>
+            <input type="transactionDate" formControlName="transactionDate" placeholder="transactionDate" name="transactionDate" class="form-control" id="transactionDate">
+            <div *ngIf="submitted && addForm.controls.transactionDate.errors" class="error">
+                <div class="text-danger" *ngIf="addForm.controls.transactionDate.errors.required">transactionDate is required</div>
+              </div>
+          </div>
+    
+          <div class="form-group">
+            <label for="remarks">remarks:</label>
+            <input formControlName="remarks" placeholder="remarks" name="remarks" class="form-control" id="remarks">
+            <div *ngIf="submitted && addForm.controls.remarks.errors" class="error">
+                <div class="text-danger" *ngIf="addForm.controls.remarks.errors.required">remarks is required</div>
+              </div>
+          </div>
+    
+      
+          <button class="btn btn-success" type="submit">Save</button>&nbsp; &nbsp;
+          <button  routerLink="/cust-home" class="btn btn-danger" type="reset">Cancel</button>
+          &nbsp; &nbsp;
+          <br/><br/>
+        </form>
+      </div>
+  </div>
+
+  <div class="col-md-1">
+     <a class="btn btn-warning" href="/userhomepage">Back</a>
+   </div>
+ </div>

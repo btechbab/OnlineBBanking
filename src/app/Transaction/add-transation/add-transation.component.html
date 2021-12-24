@@ -1,0 +1,69 @@
+<!-- <p>add-transation works!</p>
+<div class="col-md-6 col-md-offset-2">
+    <h2>Add Account</h2>
+    <br/>
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+  
+      <div align=center>
+        <p>add-cust works!</p>
+        <div class="col-md-6 col-md-offset-2">
+            <h2>Hey ! Please Enter Your Details To Proceed Creating Account User</h2>
+            <br/>
+            <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+              <div class="form-group">
+                
+      
+              <div class="form-group">
+                <label for="txId">TxId</label>
+                <input formControlName="txId" placeholder="txId" name="txId" class="form-control" id="txId">
+                <div *ngIf="submitted && addForm.controls.txId.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.txId.errors.required">TxId is required</div>
+                  </div>
+              </div>
+      
+              <div class="form-group">
+                <label for="txDetails">txDetails</label>
+                <input formControlName="txDetails" placeholder="txDetails" name="txDetails" class="form-control" id="txDetails">
+                <div *ngIf="submitted && addForm.controls.txDetails.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.txDetails.errors.required">txDetails is required</div>
+                </div>
+              </div>
+      
+              <div class="form-group">
+                <label for="txType">txType</label>
+                <input type="txType" formControlName="txType" placeholder="txType" name="txType" class="form-control" id="txType">
+                <div *ngIf="submitted && addForm.controls.txType.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.txType.errors.required">txType is required</div>
+                  </div>
+              </div>
+        
+              <div class="form-group">
+                <label for="txAmount">txAmount:</label>
+                <input formControlName="txAmount" placeholder="txAmount" name="txAmount" class="form-control" id="txAmount">
+                <div *ngIf="submitted && addForm.controls.txAmount.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.txAmount.errors.required">txAmount is required</div>
+                  </div>
+              </div>
+        
+              <div class="form-group">
+                <label for="txbal">txBal:</label>
+                <input  formControlName="txbal" placeholder="txbal" name="txbal" class="form-control" id="txbal">
+                <div *ngIf="submitted && addForm.controls.txbal.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.txbal.errors.required">txBal is required</div>
+                  </div>
+              </div>
+
+              <label for="accNo">ACCNO</label>
+                <input formControlName="accNo" placeholder="accNo" name="accNo" class="form-control" id="accNo">
+                <div *ngIf="submitted && addForm.controls.accNo.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.accNo.errors.required">accNo is required</div>
+                  </div>
+              </div>
+        
+              <button class="btn btn-success" type="submit">Save</button>&nbsp; &nbsp;
+              <button  routerLink="/cust-home" class="btn btn-danger" type="reset">Cancel</button>
+              &nbsp; &nbsp;
+              <br/><br/>
+            </form>
+          </div>
+      </div> -->

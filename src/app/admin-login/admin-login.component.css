@@ -1,0 +1,16 @@
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.login-bg {
+    background-image: url(../../assets/images/Banking.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh ;
+    background-position: top center;
+    background-size: 100% auto;
+    color: #fff;
+}

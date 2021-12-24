@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-md-3">
+      
+  <app-admin-menu></app-admin-menu>
+      
+    </div>
+    <div class="col-md-8">
+
+<div class="container">
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>txId</th>
+                <th>txDetails</th>
+                <th>txType</th>
+                <th>txAmount</th>
+                <th>txbal</th>
+                <th>accNo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let t of txList">
+                <td>{{t.txId}}</td>
+                <td>{{t.txDetails}}</td>
+                <td>{{t.txType}}</td>
+                <td>{{t.txAmount}}</td>
+                <td>{{t.txbal}}</td>
+                <td>{{t.accNo}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="col-md-1">
+    <a class="btn btn-warning" href="/AdminhomePage">Back</a>
+</div>
+</div>

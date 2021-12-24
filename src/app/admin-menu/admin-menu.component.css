@@ -1,0 +1,13 @@
+.menu-left
+{
+    background-color: #2a3b4c;
+    color: #fff;
+
+}
+
+.menu-left a
+{
+    width: 100%;
+    display: block;
+    color: #fff;
+}

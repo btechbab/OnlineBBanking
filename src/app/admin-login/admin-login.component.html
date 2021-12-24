@@ -1,0 +1,35 @@
+
+
+
+  <div class=" text-center login-bg" >
+    <h1>Login</h1>
+       <form [formGroup]="loginForm" (ngSubmit)="onSubmit() " class="form-signin">
+      <div class="form-group">
+        <label for="adminName">Admin Name</label>
+        <input type="adminName" class="form-control" formControlName="adminName" id="adminName" placeholder="Enter user login Id">
+        <div *ngIf="submitted && loginForm.controls.adminName.errors" class="error">
+          <div class="text-danger" *ngIf="loginForm.controls.adminName.errors.required">Admin Name is required</div>
+        </div>
+      
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="adminPass">Password</label>
+        <input type="password" class="form-control" formControlName="adminPass" id="adminPass" placeholder="Enter password">
+        <div *ngIf="submitted && loginForm.controls.adminPass.errors" class="error">
+          <div class="text-danger" *ngIf="loginForm.controls.adminPass.errors.required">Password is required</div>
+        </div>
+       
+      </div>
+      <br>
+      <button class="btn btn-success">Login</button> &nbsp; &nbsp;
+      <button class="btn btn-danger" type="reset">Cancel</button>
+      <a class="btn btn-warning" style="margin-left: 10px;" href="/home">Back</a>
+     
+      <div *ngIf="invalidLogin" class="error">
+        <div class="text-danger">Invalid credentials.</div> 
+        
+      </div>
+    </form>
+    
+  </div>

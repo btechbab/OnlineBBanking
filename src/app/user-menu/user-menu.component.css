@@ -1,0 +1,22 @@
+.menu-left
+{
+    background-color: #2a3b4c;
+    color: #fff;
+
+}
+
+.menu-left a
+{
+    width: 100%;
+    display: block;
+    color: #fff;
+    transition: color 5s;
+}
+
+.menu-left a:hover
+{
+    width: 100%;
+    display: block;
+    color: rgb(129, 248, 118);
+    font-size: 20px;
+}

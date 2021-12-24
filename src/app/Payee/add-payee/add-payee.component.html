@@ -1,0 +1,80 @@
+<div class="row">
+  <div class="col-md-3">
+    
+<app-user-menu></app-user-menu>
+    
+  </div>
+  <div class="col-md-8">
+<div class="col-md-6 col-md-offset-2">
+    <h2>Add Payee</h2>
+    <br/>
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+  
+      <div align=center>
+        <p>add-cust works!</p>
+        <div class="col-md-6 col-md-offset-2">
+            <br/>
+            <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+              <div class="form-group">
+                
+      
+              <div class="form-group">
+                <label for="payid">payeeId</label>
+                <input formControlName="payid" placeholder="payid" name="payid" class="form-control" id="payid">
+                <div *ngIf="submitted && addForm.controls.payid.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.payid.errors.required">payeeId is required</div>
+                  </div>
+              </div>
+      
+              <div class="form-group">
+                <label for="payname">PayeeName</label>
+                <input formControlName="payname" placeholder="payname" name="payname" class="form-control" id="payname">
+                <div *ngIf="submitted && addForm.controls.payname.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.payname.errors.required">PayeeName is required</div>
+                </div>
+              </div>
+      
+              <div class="form-group">
+                <label for="payaccno">PayeeAccNo</label>
+                <input type="payaccno" formControlName="payaccno" placeholder="payaccno" name="payaccno" class="form-control" id="payaccno">
+                <div *ngIf="submitted && addForm.controls.payaccno.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.payaccno.errors.required">PayeeAccNo is required</div>
+                  </div>
+              </div>
+        
+              <div class="form-group">
+                <label for="payreaccno">PayeeReAccNo:</label>
+                <input formControlName="payreaccno" placeholder="payreaccno" name="payreaccno" class="form-control" id="payreaccno">
+                <div *ngIf="submitted && addForm.controls.payreaccno.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.payreaccno.errors.required">PayeeReAccNo is required</div>
+                  </div>
+              </div>
+        
+              <div class="form-group">
+                <label for="paynn">PayeeNN:</label>
+                <input  formControlName="paynn" placeholder="paynn" name="paynn" class="form-control" id="paynn">
+                <div *ngIf="submitted && addForm.controls.paynn.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.paynn.errors.required">PayeeNN is required</div>
+                  </div>
+              </div>
+
+              <label for="accNo">ACCNO</label>
+                <input formControlName="accNo" placeholder="" name="accNo" class="form-control" id="accNo">
+                <div *ngIf="submitted && addForm.controls.accNo.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.accNo.errors.required">accNo is required</div>
+                  </div>
+              </div>
+        
+              <button class="btn btn-success" type="submit">Save</button>&nbsp; &nbsp;
+              <button  routerLink="/cust-home" class="btn btn-danger" type="reset">Cancel</button>
+              &nbsp; &nbsp;
+              <br/><br/>
+            </form>
+          </div>
+     
+
+      <div class="col-md-1">
+        <a class="btn btn-warning" href="/userhomepage">Back</a>
+    </div>
+</div>
+  

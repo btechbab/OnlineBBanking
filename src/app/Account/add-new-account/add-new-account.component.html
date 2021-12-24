@@ -1,0 +1,216 @@
+<div class="row">
+  <div class="col-md-3">
+    
+ <app-user-menu></app-user-menu>
+    
+  </div>
+  <div class="col-md-8 accdiv ">
+
+<div class="col-md-6 col-md-offset-2 "  align="center" >
+    <h2>Add Account</h2>
+    <br/>
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+  
+      <div>
+        
+        <div class="col-md-6 col-md-offset-2">
+            <!-- <h2>Hey ! Please Enter Your Details To Proceed Creating Account User</h2> -->
+            <br/>
+            <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+              <div class="form-group">
+                <label for="accNo">ACCNO</label>
+                <input formControlName="accNo" placeholder="" name="accNo" class="form-control" id="accNo">
+                <div *ngIf="submitted && addForm.controls.accNo.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.accNo.errors.required">accNo is required</div>
+                  </div>
+              </div>
+      
+              <div class="form-group">
+                <label for="userId">userId</label>
+                <input formControlName="userId" placeholder="userId" name="userId" class="form-control" id="userId">
+                <div *ngIf="submitted && addForm.controls.userId.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.userId.errors.required">userId is required</div>
+                  </div>
+              </div>
+      
+              <div class="form-group">
+                <label for="userPass">userPass</label>
+                <input type="password" formControlName="userPass" placeholder="userPass" name="userPass" class="form-control" id="userPass">
+                 <div *ngIf="submitted && addForm.controls.userPass.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.userPass.errors.required">userPass is required</div>
+                 </div>
+              </div>
+      
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input type="title" formControlName="title" placeholder="title" name="title" class="form-control" id="title">
+                <div *ngIf="submitted && addForm.controls.title.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.title.errors.required">title is required</div>
+                  </div>
+              </div>
+        
+              <div class="form-group">
+                <label for="firstName">firstName:</label>
+                <input formControlName="firstName" placeholder="firstName" name="firstName" class="form-control" id="firstName">
+                <div *ngIf="submitted && addForm.controls.firstName.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.firstName.errors.required">firstName is required</div>
+                  </div>
+              </div>
+        
+              <div class="form-group">
+                <label for="middleName">middleName:</label>
+                <input  formControlName="middleName" placeholder="middleName" name="middleName" class="form-control" id="middleName">
+                <div *ngIf="submitted && addForm.controls.middleName.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.middleName.errors.required">middleName is required</div>
+                  </div>
+              </div>
+        
+              <div class="form-group">
+                <label for="lastName">lastName:</label>
+                <input  formControlName="lastName" placeholder="lastName" name="lastName" class="form-control" id="middleName">
+                <div *ngIf="submitted && addForm.controls.lastName.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.lastName.errors.required">middleName is required</div>
+                  </div>
+              </div>
+      
+              <div class="form-group">
+                <label for="fatherName">fatherName:</label>
+                <input  formControlName="fatherName" placeholder="fatherName" name="fatherName" class="form-control" id="lastName">
+                <div *ngIf="submitted && addForm.controls.fatherName.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.fatherName.errors.required">lastName is required</div>
+                  </div>
+              </div>
+        
+              <div class="form-group">
+                <label for="mobileNum">mobileNum:</label>
+                <input formControlName="mobileNum" placeholder="mobileNum" name="mobileNum" class="form-control" id="fatherName">
+                <div *ngIf="submitted && addForm.controls.mobileNum.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.mobileNum.errors.required"> fatherName is required</div>
+                  </div>
+              </div>
+      
+              <div class="form-group">
+                <label for="emailID">emailID:</label>
+                <input formControlName="emailID" placeholder="emailID" name="emailID" class="form-control" id="emailID">
+                <div *ngIf="submitted && addForm.controls.emailID.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.emailID.errors.required"> emailID is required</div>
+                  </div>
+              </div>
+        
+              <div class="form-group">
+                <label for="aadharNum">aadharNum:</label>
+                <input formControlName="aadharNum" placeholder="aadharNum" name="aadharNum" class="form-control" id="aadharNum">
+                <div *ngIf="submitted && addForm.controls.aadharNum.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.aadharNum.errors.required"> aadharNum is required</div>
+                  </div>
+              </div>
+        
+              <div class="form-group">
+                <label for="dob">dob:</label>
+                <input formControlName="dob" placeholder="dob" name="dob" class="form-control" id="dob">
+                <div *ngIf="submitted && addForm.controls.dob.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.dob.errors.required"> dob is required</div>
+                  </div>
+              </div>
+        
+              <div class="form-group">
+                <label for="occType">occType:</label>
+                <input formControlName="occType" placeholder="occType" name="occType" class="form-control" id="occType">
+                <div *ngIf="submitted && addForm.controls.occType.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.occType.errors.required"> occType is required</div>
+                  </div>
+              </div>
+        
+        
+              <div class="form-group">
+                <label for="sourceOfIncome">sourceOfIncome:</label>
+                <input formControlName="sourceOfIncome" placeholder="sourceOfIncome" name="sourceOfIncome" class="form-control" id="sourceOfIncome">
+                <div *ngIf="submitted && addForm.controls.sourceOfIncome.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.sourceOfIncome.errors.required"> sourceOfIncome is required</div>
+                  </div>
+              </div>
+        
+        
+              <div class="form-group">
+                <label for="grossAnnualIncome">grossAnnualIncome:</label>
+                <input formControlName="grossAnnualIncome" placeholder="grossAnnualIncome" name="grossAnnualIncome" class="form-control" id="grossAnnualIncome">
+                <div *ngIf="submitted && addForm.controls.grossAnnualIncome.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.grossAnnualIncome.errors.required"> grossAnnualIncome is required</div>
+                  </div>
+              </div>
+        
+        
+              <div class="form-group">
+                <label for="debitCard">debitCard:</label>
+                <input formControlName="debitCard" placeholder="debitCard" name="debitCard" class="form-control" id="debitCard">
+                <div *ngIf="submitted && addForm.controls.debitCard.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.debitCard.errors.required"> debitCard is required</div>
+                  </div>
+              </div>
+        
+        
+              <div class="form-group">
+                <label for="netBanking">netBanking:</label>
+                <input formControlName="netBanking" placeholder="netBanking" name="netBanking" class="form-control" id="netBanking">
+                <div *ngIf="submitted && addForm.controls.netBanking.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.netBanking.errors.required"> netBanking is required</div>
+                  </div>
+              </div>
+        
+        
+              <div class="form-group">
+                <label for="balance">balance:</label>
+                <input formControlName="balance" placeholder="balance" name="balance" class="form-control" id="balance">
+                <div *ngIf="submitted && addForm.controls.balance.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.balance.errors.required"> balance is required</div>
+                  </div>
+              </div>
+      
+              
+              <div class="form-group">
+                <label for="state">state:</label>
+                <input formControlName="state" placeholder="state" name="state" class="form-control" id="State">
+                <div *ngIf="submitted && addForm.controls.state.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.state.errors.required"> State is required</div>
+                  </div>
+              </div>
+      
+              <div class="form-group">
+                <label for="landmark">landmark:</label>
+                <input formControlName="landmark" placeholder="landmark" name="landmark" class="form-control" id="Landmark">
+                <div *ngIf="submitted && addForm.controls.landmark.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.landmark.errors.required"> Landmark is required</div>
+                  </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="city">city:</label>
+                <input formControlName="city" placeholder="city" name="city" class="form-control" id="Landmark">
+                <div *ngIf="submitted && addForm.controls.city.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.city.errors.required"> city is required</div>
+                  </div>
+              </div>
+        
+              <div class="form-group">
+                <label for="pincode">pincode:</label>
+                <input formControlName="pincode" placeholder="pincode" name="pincode" class="form-control" id="Pincode">
+                <div *ngIf="submitted && addForm.controls.pincode.errors" class="error">
+                    <div class="text-danger" *ngIf="addForm.controls.pincode.errors.required"> pincode is required</div>
+                  </div>
+              </div>
+        
+      
+        
+              <button class="btn btn-success" type="submit" >Save</button>&nbsp; &nbsp;
+              <button  routerLink="/cust-home" class="btn btn-danger" type="reset">Cancel</button>
+              &nbsp; &nbsp;
+              <br/><br/>
+            </form>
+          </div>
+      </div>
+  
+    
+    <div class="col-md-1">
+        <a class="btn btn-warning" href="/userhomepage">Back</a>
+    </div>
+
